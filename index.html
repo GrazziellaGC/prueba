@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="tattoo studio" content="">
+  <meta name="Gonález_Hernández" content="">
+  <title>Página Grupal</title>
+  <!-- Bootstrap core CSS-->
+  <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+  <link href="css/menu-sidebar.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="wrapper">
+  <div class="overlay"></div>
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="sidebar-wrapper">
+    <ul class="nav sidebar-nav">
+      <li class="sidebar-brand"><a href="#">Inicio</a></li>
+     
+      <li><a href="views/Graciela.html">Grazziela González</a></li>
+      <li><a href="views/Mente.html">Mente Hernádez</a></li>
+     
+
+    </ul>
+  </nav>
+<!--   hasta aca termina el menu -->
+<!-- aqui inicia el menu responsivo -->
+<div id="page-content-wrapper">
+  <button type="button" data-toggle="offcanvas"
+  class="hamburger is-closed">
+  <span class="hamb-top"></span>
+   <span class="hamb-middle"></span>
+   <span class="hamb-bottom"></span> 
+ </button>
+<!--    hasta aqui va el menu responsivo -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-5">
+      <img src="img/750x450.png" class="adaptar img-fluid">
+
+    </div>
+    <div class="col-md-7">
+      <h2> TITULO DE BIENVENIDA </h2>
+      <br>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede </p>
+      <br>
+      <p>mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit </p>
+      <br>
+      <p>vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, </p>
+    </div>
+  </div>
+  <div class="row mb-4">
+    <div class="col-md-6">
+      <div class="card text-center">
+        <img src="img/750x450.png" class="adaptar img-fluid">
+        <div class="card-body">
+          <h4>Graciela González</h4>
+          <p class="position-member">position member</p>
+          <br>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+          <br>
+          <a href="#">conoce más</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card text-center">
+        <img src="img/750x450.png" class="adaptar img-fluid">
+        <div class="card-body">
+          <h4>Mente Hernández</h4>
+          <p class="position-member">position member</p>
+          <br>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+          <br>
+          <a href="#">conoce más</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+ <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+      </div>
+   
+    </footer>
+</div>
+
+<!-- Estructura de bootstrap
+ 1. se decide o no si se declara antes una div con una clase personal
+ 2. declara un contenedor de los 2 existentes
+      class="container"
+      class="container-fuid"
+ 3. declara una fila
+      class="row"
+ 4. declaran las columnas cuya sumatoriasera siempre 12
+      class="col-md-6"  
+      class="col-md-6"
+ 5. se procede a crear nuestro diseño      -->
+</div>
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="js/jquery/jquery-1.12.4.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="js/sb-admin.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function () {
+          var trigger = $('.hamburger'),
+          overlay = $('.overlay'),
+          isClosed = false;
+
+          trigger.click(function () {
+          hamburger_cross();      
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {          
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {   
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+  }
+  
+  $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+  });  
+});
+  </script> 
+  </div>
+</body>
+
+
+</html>
